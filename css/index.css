@@ -127,10 +127,108 @@ table {
   border-spacing: 0;
 }
 /* Set every element's box-sizing to border-box */
-* {
-  box-sizing: border-box;
-}
 html,
 body {
+  box-sizing: border-box;
   height: 100%;
+  font-size: 62.5%;
+  margin: 20px 40px 0px 40px;
+  font-family: 'Pathway Gothic One', sans-serif;
+}
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+@main h2: 1.5rem;
+.nav-display {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.li-nav {
+  padding-left: 50px;
+  font-size: 1.5rem;
+  font-style: oblique;
+}
+.major-head ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-bottom: 2%;
+}
+.major-head ul li {
+  padding-left: 50px;
+  font-size: 1.5rem;
+  font-style: oblique;
+}
+.major-head ul a {
+  text-decoration: none;
+  color: black;
+}
+.major-head ul a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+@media (max-width: 500px) {
+  .major-head ul {
+    width: 100%;
+    justify-content: center;
+    padding-left: 40px;
+    padding-right: 0px;
+  }
+}
+@media (max-width: 800px) {
+  .major-head ul {
+    width: 100%;
+    justify-content: center;
+  }
+  .major-head ul ul {
+    padding-right: 20px;
+    font-size: 2rem;
+  }
+  .major-head ul li {
+    padding: 0px 30px;
+  }
+}
+.lower {
+  display: flex;
+  flex-direction: column;
+  background-color: #e1e3e8;
+}
+.btn {
+  background-color: crimson;
+  text-decoration: underline;
+}
+.lower-head {
+  display: flex;
+  flex-direction: column;
+  background-color: #e1e3e8;
+}
+.lower-head .pic-01 {
+  width: 40%;
+  padding-left: 40px;
+  padding-top: 7%;
+}
+.lower-head h1 {
+  font-size: 10rem;
+  width: 100%;
+  padding: 1% 0px 1% 60px;
+}
+.lower-head p {
+  font-size: 4em;
+  padding: 1% 0px 1% 60px;
+}
+.lower-head button {
+  color: white;
+  background-color: grey;
+  border-radius: 8%;
+  padding: 1%;
+  margin-left: 4.5%;
+  margin-bottom: 7%;
+  font-size: 2rem;
+}
+.lower-head button:hover {
+  background-color: crimson;
+  text-decoration: underline;
 }

@@ -236,6 +236,8 @@ html, body {
 		}
 		p{
 			font-size: @para-size;
+			color: crimson;
+
 		}
 	}
 
@@ -248,11 +250,13 @@ html, body {
 		}
 
 		p{
-			font-size: @para-size
+			font-size: @para-size;
+			color: crimson;
 		}
 		ul li{
 			padding: 5%;
 			font-size: 2.5rem;
+			color: crimson;
 		}
 
 	}
@@ -302,8 +306,16 @@ html, body {
 			text-align: center;
 			font-size: 2rem;
 
+			th{
+				padding: 4%;
+				border-bottom: 1px solid black;
+			}
+
 			td{
-				padding: 2%;
+				padding: 4%;
+				margin-bottom: 1%;
+				border-bottom: 1px solid black;
+
 
 			}
 		}
@@ -317,6 +329,7 @@ html, body {
 		h1{
 			font-size: 3rem;
 			padding: 3%;
+			font-style: bold;
 		}
 		table{
 			width: 100%;
@@ -327,17 +340,19 @@ html, body {
 			}
 				td{
 					padding: 3%;
+					border-bottom: 1px solid black;
 				}
 	}
 				@media(max-width: 500px){
 					.lower-content-1{
 						width: 100%;
-						border-bottom: 2px black solid;
+						// border-bottom: 2px black solid;
 						padding-bottom: 2%;
 
 						h1{
 							font-size: 1rem;
 							// padding: 3%;
+							font-style: bold;
 						}
 						table{
 							width: 100%;
@@ -371,7 +386,8 @@ html, body {
 								font-size: 0.5rem;
 							}
 								th{
-									font-size: 0.5rem;
+									font-size: 0.2rem;
+
 								}
 								td{
 									padding: 3%;

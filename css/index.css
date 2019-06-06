@@ -364,7 +364,7 @@ body {
 }
 @media (max-width: 500px) {
   .container-2 .lower-content-1 {
-    width: 100%;
+    width: auto;
     padding-bottom: 2%;
   }
   .container-2 .lower-content-1 h1 {
@@ -372,37 +372,37 @@ body {
     font-style: bold;
   }
   .container-2 .lower-content-1 table {
-    width: 100%;
+    width: auto;
   }
   .container-2 .lower-content-1 tr {
-    font-size: 0.5rem;
+    font-size: 0.2rem;
   }
   .container-2 .lower-content-1 th {
-    font-size: 0.5rem;
+    font-size: 0.2rem;
   }
   .container-2 .lower-content-1 td {
     padding: 3%;
-    font-size: 0.5rem;
+    font-size: 0.2rem;
   }
   .container-2 .lower-content-2 {
-    width: 100%;
+    width: auto;
     border-bottom: 2px black solid;
   }
   .container-2 .lower-content-2 h1 {
     font-size: 1rem;
   }
   .container-2 .lower-content-2 table {
-    width: 100%;
+    width: auto;
   }
   .container-2 .lower-content-2 tr {
     font-size: 0.5rem;
   }
   .container-2 .lower-content-2 th {
-    font-size: 0.2rem;
+    font-size: 0.5rem;
   }
   .container-2 .lower-content-2 td {
     padding: 3%;
-    font-size: 0.5rem;
+    font-size: 0.2rem;
   }
 }
 .footer-content {

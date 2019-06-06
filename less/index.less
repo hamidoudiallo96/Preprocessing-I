@@ -151,7 +151,7 @@ html, body {
 
 .picture{
 	width: 40%;
-	padding-left: 28%;
+	// padding-left: 28%;
 	margin-top: 6%
 
 
@@ -160,7 +160,7 @@ html, body {
 
 .btn{
 	border-radius: 20%;
-	margin: 2% 0% 2% 40%;
+	margin: 2% 0% 2% 3%;
 	padding:1.5%;
 	font-size:@para-size;
 	color: @button-text;
@@ -234,4 +234,100 @@ html, body {
 
 
 
+}
+
+
+
+.container-1{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border: 5px black groove;
+	padding: 5%;
+	margin: 2% 0%;
+
+
+	.main-content-1{
+		width: 40%;
+		h1{
+			font-size: 3rem;
+		}
+		p{
+			font-size: @para-size
+		}
+	}
+
+	.main-content-2{
+		width: 40%;
+		h1{
+			font-size: 3rem;
+		}
+
+		p{
+			font-size: @para-size
+		}
+		ul li{
+			padding: 5%;
+			font-size: 2.5rem;
+		}
+
+	}
+}
+
+
+
+
+.container-2{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border: 5px groove red;
+
+	.lower-content-1{
+		width: 100%;
+		h1{
+			font-size: 3rem;
+			margin-top: 2%;
+			padding: 3%;
+		}
+		table{
+			width: 100%;
+		}
+		table tr{
+			text-align: center;
+			font-size: 2rem;
+		}
+			table tr td{
+				padding: 2%;
+			}
+	}
+
+
+
+	.lower-content-2{
+		margin-top: 2%;
+		width: 100%;
+		h1{
+			font-size: 3rem;
+			padding: 3%;
+		}
+		table{
+			width: 100%;
+
+		}
+		table tr{
+			text-align: center;
+			font-size: 2rem;
+		}
+			table tr td{
+				padding: 3%;
+			}
+	}
+}
+
+
+.footer-content{
+	text-align: center;
+	margin-top: 3%;
+	font-size: 1.5rem;
 }

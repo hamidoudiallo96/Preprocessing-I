@@ -202,12 +202,11 @@ body {
 }
 .picture {
   width: 40%;
-  padding-left: 28%;
   margin-top: 6%;
 }
 .btn {
   border-radius: 20%;
-  margin: 2% 0% 2% 40%;
+  margin: 2% 0% 2% 3%;
   padding: 1.5%;
   font-size: 2rem;
   color: white;
@@ -223,7 +222,6 @@ body {
 }
 .lower-head .pic-01 {
   width: 40%;
-  padding-left: 28%;
   margin-top: 6%;
 }
 .lower-head h1 {
@@ -238,7 +236,7 @@ body {
 }
 .lower-head button {
   border-radius: 20%;
-  margin: 2% 0% 2% 40%;
+  margin: 2% 0% 2% 3%;
   padding: 1.5%;
   font-size: 2rem;
   color: white;
@@ -272,4 +270,81 @@ body {
   .lower-head button {
     margin-left: 0%;
   }
+}
+.container-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 5px black groove;
+  padding: 5%;
+  margin: 2% 0%;
+}
+.container-1 .main-content-1 {
+  width: 40%;
+}
+.container-1 .main-content-1 h1 {
+  font-size: 3rem;
+}
+.container-1 .main-content-1 p {
+  font-size: 2rem;
+}
+.container-1 .main-content-2 {
+  width: 40%;
+}
+.container-1 .main-content-2 h1 {
+  font-size: 3rem;
+}
+.container-1 .main-content-2 p {
+  font-size: 2rem;
+}
+.container-1 .main-content-2 ul li {
+  padding: 5%;
+  font-size: 2.5rem;
+}
+.container-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 5px groove red;
+}
+.container-2 .lower-content-1 {
+  width: 100%;
+}
+.container-2 .lower-content-1 h1 {
+  font-size: 3rem;
+  margin-top: 2%;
+  padding: 3%;
+}
+.container-2 .lower-content-1 table {
+  width: 100%;
+}
+.container-2 .lower-content-1 table tr {
+  text-align: center;
+  font-size: 2rem;
+}
+.container-2 .lower-content-1 table tr td {
+  padding: 2%;
+}
+.container-2 .lower-content-2 {
+  margin-top: 2%;
+  width: 100%;
+}
+.container-2 .lower-content-2 h1 {
+  font-size: 3rem;
+  padding: 3%;
+}
+.container-2 .lower-content-2 table {
+  width: 100%;
+}
+.container-2 .lower-content-2 table tr {
+  text-align: center;
+  font-size: 2rem;
+}
+.container-2 .lower-content-2 table tr td {
+  padding: 3%;
+}
+.footer-content {
+  text-align: center;
+  margin-top: 3%;
+  font-size: 1.5rem;
 }

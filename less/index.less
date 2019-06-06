@@ -73,13 +73,13 @@ html, body {
 
 
 //Main variables:
-@main-h1: 10rem;
+@main-h1: 5rem;
 @font-weight: bold;
 @button-color: grey;
 @button-text: white;
 @main h2: 1.5rem;
 @main-color: #e1e3e8;
-@para-size: 4em;
+@para-size: 2rem;
 
 //
 .nav-display{
@@ -91,8 +91,9 @@ html, body {
 .li-nav{
 	padding-left: 50px;
 	font-size: @header-font;
-	font-style:oblique;
+	font-style: oblique;
 }
+
 
 .major-head ul{
 	width:100%;
@@ -115,8 +116,11 @@ html, body {
 			@media(max-width:500px){
 				width:100%;
 				justify-content: center;
-				padding-left: 40px;
-				padding-right:0px;
+				ul{
+					padding-bottom: 2%;
+				}
+				// padding-left: 40px;
+				// padding-right:0px;
 
 			}
 
@@ -124,7 +128,8 @@ html, body {
 				width: 100%;
 				justify-content: center;
 				 ul{
-					 padding-right: 20px;
+					 // padding-right: 20px;
+					 justify-content: center;
 	 				 font-size: 2rem;
 				 }
 				 	li{
@@ -134,48 +139,99 @@ html, body {
 }
 
 
-
-.lower{
+.low{
 	display: flex;
 	flex-direction: column;
-	background-color: @main-color;
+	align-items: center;
+	background-color: #e1e3e8;
+	border: 5px groove crimson;
+	margin-top: 2%;
+
+}
+
+.picture{
+	width: 40%;
+	padding-left: 28%;
+	margin-top: 6%
+
+
+
 }
 
 .btn{
-	background-color: crimson;
-	text-decoration: underline;
+	border-radius: 20%;
+	margin: 2% 0% 2% 40%;
+	padding:1.5%;
+	font-size:@para-size;
+	color: @button-text;
+	background-color: @button-color;
+
+
+
 }
 
 
 .lower-head{
-	.lower();
+	.low();
+
 	.pic-01{
-		width:40%;
-		padding-left: 40px;
-		padding-top: 7%;
+		.picture();
 	}
+
 	h1{
 		font-size: @main-h1;
+		text-align: center;
 		width: 100%;
-		padding: 1% 0px 1% 60px;
 	}
 
 	p{
-		font-size: @para-size;
-		padding: 1% 0px 1% 60px;
+		font-size:@para-size;
+		text-align: center;
+		padding-top: 2%;
 	}
 
 	button{
-		color: @button-text;
-		background-color: @button-color;
-		border-radius: 8%;
-		padding: 1%;
-		margin-left: 4.5%;
-		margin-bottom: 7%;
-		font-size:2rem;
-	}
-	button:hover{
 		.btn();
 	}
+
+	button:hover{
+		color: white;
+		background-color: crimson;
+	}
+
+		@media screen and (max-width:500px){
+			width:100%;
+			.pic-01{
+				width:100%;
+				padding-left: 0%;
+
+			}
+
+			// h1,p{
+			// 	padding: 2%;
+			// }
+			//
+			 button{
+				margin-left: 10%;
+			}
+
+
+		}
+
+		@media screen and (max-width:800px){
+			align-items: center;
+			width: 100%;
+			.pic-01{
+				width:100%;
+				padding-left: 0%;
+
+			}
+			button{
+				margin-left: 0%;
+			}
+
+		}
+
+
 
 }

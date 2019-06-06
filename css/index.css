@@ -174,8 +174,9 @@ body {
   .major-head ul {
     width: 100%;
     justify-content: center;
-    padding-left: 40px;
-    padding-right: 0px;
+  }
+  .major-head ul ul {
+    padding-bottom: 2%;
   }
 }
 @media (max-width: 800px) {
@@ -184,51 +185,91 @@ body {
     justify-content: center;
   }
   .major-head ul ul {
-    padding-right: 20px;
+    justify-content: center;
     font-size: 2rem;
   }
   .major-head ul li {
     padding: 0px 30px;
   }
 }
-.lower {
+.low {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: #e1e3e8;
+  border: 5px groove crimson;
+  margin-top: 2%;
+}
+.picture {
+  width: 40%;
+  padding-left: 28%;
+  margin-top: 6%;
 }
 .btn {
-  background-color: crimson;
-  text-decoration: underline;
+  border-radius: 20%;
+  margin: 2% 0% 2% 40%;
+  padding: 1.5%;
+  font-size: 2rem;
+  color: white;
+  background-color: grey;
 }
 .lower-head {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: #e1e3e8;
+  border: 5px groove crimson;
+  margin-top: 2%;
 }
 .lower-head .pic-01 {
   width: 40%;
-  padding-left: 40px;
-  padding-top: 7%;
+  padding-left: 28%;
+  margin-top: 6%;
 }
 .lower-head h1 {
-  font-size: 10rem;
+  font-size: 5rem;
+  text-align: center;
   width: 100%;
-  padding: 1% 0px 1% 60px;
 }
 .lower-head p {
-  font-size: 4em;
-  padding: 1% 0px 1% 60px;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 2%;
 }
 .lower-head button {
+  border-radius: 20%;
+  margin: 2% 0% 2% 40%;
+  padding: 1.5%;
+  font-size: 2rem;
   color: white;
   background-color: grey;
-  border-radius: 8%;
-  padding: 1%;
-  margin-left: 4.5%;
-  margin-bottom: 7%;
-  font-size: 2rem;
 }
 .lower-head button:hover {
+  color: white;
   background-color: crimson;
-  text-decoration: underline;
+}
+@media screen and (max-width: 500px) {
+  .lower-head {
+    width: 100%;
+  }
+  .lower-head .pic-01 {
+    width: 100%;
+    padding-left: 0%;
+  }
+  .lower-head button {
+    margin-left: 10%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .lower-head {
+    align-items: center;
+    width: 100%;
+  }
+  .lower-head .pic-01 {
+    width: 100%;
+    padding-left: 0%;
+  }
+  .lower-head button {
+    margin-left: 0%;
+  }
 }

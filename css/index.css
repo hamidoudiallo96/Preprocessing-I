@@ -251,24 +251,11 @@ body {
     width: 100%;
   }
   .lower-head .pic-01 {
-    width: 100%;
+    width: 80%;
     padding-left: 0%;
   }
   .lower-head button {
     margin-left: 10%;
-  }
-}
-@media screen and (max-width: 800px) {
-  .lower-head {
-    align-items: center;
-    width: 100%;
-  }
-  .lower-head .pic-01 {
-    width: 100%;
-    padding-left: 0%;
-  }
-  .lower-head button {
-    margin-left: 0%;
   }
 }
 .container-1 {
@@ -280,16 +267,21 @@ body {
   margin: 2% 0%;
 }
 .container-1 .main-content-1 {
-  width: 40%;
+  width: 48%;
+  background-color: #e1e3e8;
+  text-align: center;
 }
 .container-1 .main-content-1 h1 {
   font-size: 3rem;
+  padding-bottom: 2%;
 }
 .container-1 .main-content-1 p {
   font-size: 2rem;
 }
 .container-1 .main-content-2 {
-  width: 40%;
+  width: 48%;
+  background-color: #e1e3e8;
+  text-align: center;
 }
 .container-1 .main-content-2 h1 {
   font-size: 3rem;
@@ -301,11 +293,27 @@ body {
   padding: 5%;
   font-size: 2.5rem;
 }
+@media (max-width: 500px) {
+  .container-1 {
+    align-items: center
+				width: 100%
+				display: flex;
+    flex-direction: column;
+  }
+  .container-1 .main-content-1 {
+    width: 100%;
+  }
+  .container-1 .main-content-2 {
+    margin-top: 5%;
+    width: 100%;
+  }
+}
 .container-2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   border: 5px groove red;
+  background-color: #e1e3e8;
 }
 .container-2 .lower-content-1 {
   width: 100%;
@@ -340,10 +348,18 @@ body {
   text-align: center;
   font-size: 2rem;
 }
-.container-2 .lower-content-2 table tr td {
+.container-2 .lower-content-2 td {
   padding: 3%;
 }
-.footer-content {
+@media (max-width: 500px) {
+  .container-2 .container-2 .lower-content-1 table {
+    width: 50%;
+  }
+  .container-2 .container-2 .lower-content-1 table tr {
+    font-size: 1rem;
+  }
+}
+footer .footer-content {
   text-align: center;
   margin-top: 3%;
   font-size: 1.5rem;

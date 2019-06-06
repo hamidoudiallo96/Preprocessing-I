@@ -202,38 +202,17 @@ html, body {
 		@media screen and (max-width:500px){
 			width:100%;
 			.pic-01{
-				width:100%;
+				width:80%;
 				padding-left: 0%;
 
 			}
 
-			// h1,p{
-			// 	padding: 2%;
-			// }
-			//
 			 button{
 				margin-left: 10%;
 			}
 
 
 		}
-
-		@media screen and (max-width:800px){
-			align-items: center;
-			width: 100%;
-			.pic-01{
-				width:100%;
-				padding-left: 0%;
-
-			}
-			button{
-				margin-left: 0%;
-			}
-
-		}
-
-
-
 }
 
 
@@ -248,17 +227,22 @@ html, body {
 
 
 	.main-content-1{
-		width: 40%;
+		width: 48%;
+		background-color: #e1e3e8;
+		text-align: center;
 		h1{
 			font-size: 3rem;
+			padding-bottom: 2%;
 		}
 		p{
-			font-size: @para-size
+			font-size: @para-size;
 		}
 	}
 
 	.main-content-2{
-		width: 40%;
+		width: 48%;
+		background-color: #e1e3e8;
+		text-align: center;
 		h1{
 			font-size: 3rem;
 		}
@@ -272,7 +256,27 @@ html, body {
 		}
 
 	}
+
+		@media(max-width:500px){
+				align-items: center
+				width: 100%
+				display: flex;
+				flex-direction: column;
+
+				.main-content-1{
+					width: 100%;
+				}
+
+				.main-content-2{
+					margin-top: 5%;
+					width: 100%;
+				}
+
+	}
 }
+
+
+
 
 
 
@@ -282,6 +286,7 @@ html, body {
 	flex-direction: column;
 	justify-content: space-between;
 	border: 5px groove red;
+	background-color: #e1e3e8;
 
 	.lower-content-1{
 		width: 100%;
@@ -296,10 +301,12 @@ html, body {
 		table tr{
 			text-align: center;
 			font-size: 2rem;
-		}
-			table tr td{
+
+			td{
 				padding: 2%;
+
 			}
+		}
 	}
 
 
@@ -313,17 +320,21 @@ html, body {
 		}
 		table{
 			width: 100%;
-
 		}
-		table tr{
-			text-align: center;
-			font-size: 2rem;
-		}
-			table tr td{
-				padding: 3%;
+			tr{
+				text-align: center;
+				font-size: 2rem;
 			}
+				td{
+					padding: 3%;
+				}
 	}
+				@media(max-width: 500px){
+					.container-2{
+						width: 100%;
+				}
 }
+
 
 
 .footer-content{

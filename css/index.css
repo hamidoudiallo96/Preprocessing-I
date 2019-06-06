@@ -344,7 +344,7 @@ body {
 .container-2 .lower-content-2 table {
   width: 100%;
 }
-.container-2 .lower-content-2 table tr {
+.container-2 .lower-content-2 tr {
   text-align: center;
   font-size: 2rem;
 }
@@ -352,14 +352,49 @@ body {
   padding: 3%;
 }
 @media (max-width: 500px) {
-  .container-2 .container-2 .lower-content-1 table {
-    width: 50%;
+  .container-2 .lower-content-1 {
+    width: 100%;
+    border-bottom: 2px black solid;
+    padding-bottom: 2%;
   }
-  .container-2 .container-2 .lower-content-1 table tr {
+  .container-2 .lower-content-1 h1 {
     font-size: 1rem;
   }
+  .container-2 .lower-content-1 table {
+    width: 100%;
+  }
+  .container-2 .lower-content-1 tr {
+    font-size: 0.5rem;
+  }
+  .container-2 .lower-content-1 th {
+    font-size: 0.5rem;
+  }
+  .container-2 .lower-content-1 td {
+    padding: 3%;
+    font-size: 0.5rem;
+  }
+  .container-2 .lower-content-2 {
+    width: 100%;
+    border-bottom: 2px black solid;
+  }
+  .container-2 .lower-content-2 h1 {
+    font-size: 1rem;
+  }
+  .container-2 .lower-content-2 table {
+    width: 100%;
+  }
+  .container-2 .lower-content-2 tr {
+    font-size: 0.5rem;
+  }
+  .container-2 .lower-content-2 th {
+    font-size: 0.5rem;
+  }
+  .container-2 .lower-content-2 td {
+    padding: 3%;
+    font-size: 0.5rem;
+  }
 }
-footer .footer-content {
+.footer-content {
   text-align: center;
   margin-top: 3%;
   font-size: 1.5rem;
